@@ -1,0 +1,3 @@
+The RMSE of case 4 is about 1.06 and the RMSE of case 3 is 1.15. Therefore, the accuracy is improved. However, run time is longer bucause of the introduce of Jaccard based LSH.
+
+When I calculate the predict rating for user u on business i in case 4, I filter the i's co-relative business that have a Jaccard similarity less than 0.5 with i. By this method, we aviod the negative influence caused by low weights(Pearson Correlation) and only remain the businesses that will have a high Pearson Correlation Coefficient with i. Therefore the accuracy of the predict rating is improved.
